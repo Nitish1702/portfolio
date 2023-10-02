@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+  font-family: 'Archivo Black' sans-serif;
+}
+
+.heading {
+  position: relative;
+}
+
+.heading h1:nth-child(2) {
+
+  position: absolute;
+
+}
+
+.heading h1:nth-child(1) {
+  color: transparent;
+  -webkit-text-stroke: 2px black;
+
+
+}
+
+.heading h1:nth-child(2) {
+  color: black;
+  -webkit-text-stroke: 2px #0000;
+  transform: translateY(-100%);
+  animation: animate 1s ease-in-out infinite;
+
+
+}
+
+.heading h1:nth-child(3) {
+
+  position: absolute;
+
+}
+
+.heading h1:nth-child(3) {
+  color: transparent;
+  -webkit-text-stroke: 2px black;
+
+
+}
+
+.heading h1:nth-child(4) {
+  color: black;
+  -webkit-text-stroke: 2px #0000;
+  animation: animate 1s ease-in-out infinite;
+
+
+}
+
+@keyframes animate {
+  0%, 100% {
+    clip-path: polygon(0% 65%, 6% 69%, 13% 70%, 19% 71%, 26% 71%, 36% 69%, 41% 65%, 47% 61%, 53% 57%, 59% 54%, 65% 52%, 74% 51%, 81% 50%, 86% 52%, 93% 55%, 100% 57%, 99% 98%, 0% 100%);
+  }
+
+  50% {
+    clip-path: polygon(0% 67%, 4% 61%, 11% 56%, 17% 53%, 25% 52%, 33% 55%, 42% 59%, 46% 63%, 53% 68%, 62% 70%, 70% 72%, 76% 73%, 83% 73%, 90% 70%, 94% 65%, 100% 64%, 99% 98%, 0% 100%);
+  }
+}
+
+
+
+
+.marquee-animation {
+  animation: marquee 10s linear infinite;
+  display: flex;
+  align-items: center;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  
+  100% {
+    transform: translateX(-100%);
+  }
+}
