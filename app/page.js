@@ -22,7 +22,7 @@ const Page = () => {
       alt:'express',
     },
     {
-      img:'/images/mongoDb.png',
+      img:'/images/mongoDB.png',
       alt:'mongoDb',
     },
     {
