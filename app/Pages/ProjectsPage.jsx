@@ -29,8 +29,8 @@ const ProjectsPage = () => {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4 md:px-[7vw] overflow-hidden snap-y">
           {projects.map((project, index) => (
-            <div key={index} className="group relative overflow-hidden shadow-md transition-transform transform hover:scale-105">
-              <img src={project.imageUrl} alt={project.title} className="object-fit object-center w-full h-[300px] md:h-[400px]" />
+            <div key={index} className="group relative overflow-hidden shadow-md transition-transform transform hover:scale-105 rounded-3xl p-7">
+              <img src={project.imageUrl} alt={project.title} className=" rounded-3xl object-fit object-center w-full h-[300px] md:h-[400px]" />
               <div className="absolute inset-0 opacity-0 hover:opacity-100 bg-black bg-opacity-70 transition-opacity duration-300">
                 <div className="absolute inset-0 flex flex-col justify-center items-center px-3">
                   <h2 className="text-2xl md:text-3xl font-semibold text-white pb-5">{project.title}</h2>
