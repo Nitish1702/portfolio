@@ -6,25 +6,25 @@ const IntroductionPage = ({ logos }) => {
 
   return (
     <>
-      <div className='bg-[#D5FF3E] min-h-screen w-full pt-3'>
-        <div className='heading pl-4 md:pl-20 mt-[10vh] md:mt-[20vh]  md:flex-row'>
+      <div className='bg-[#c6fd3c] min-h-screen w-full pt-16'>
+        <div className='heading pl-4 md:pl-20   md:flex-row'>
           <h1 className=' font-extrabold text-[10vw] text-left z-50 wave'>WEB </h1>
           <h1 className=' font-extrabold text-[10vw] text-left z-50 wave'>WEB</h1>
           <h1 className=' font-extrabold text-[10vw] text-left z-50 wave'>DEVELOPER</h1>
           <h1 className=' font-extrabold text-[10vw] text-left z-50 wave'>DEVELOPER</h1>
 
-          <motion.img
+          {/* <motion.img
             whileTap={{ x: 100 ,y:50 }}
 
             src='/images/Programming.gif'
             alt='Web Developer'
             className='h-[30vh] md:h-[40vh] w-[30vw] md:w-[25vw] ml-4 md:ml-10 mt-4 md:mt-0 absolute left-[60vw] hidden md:block top-[-5vh]'
-          />
+          /> */}
         </div>
 
         <div className='dividerLabel1 flex space-x-5 px-[5vw] md:px-[10vw]'>
           <motion.button
-          whileHover={{ scale: 1.3 }}
+          whileHover={{ scale: 1.1 }}
           whileTap={{width:100}}
             className='border-black border-[1px] w-[20vw] px-[2vw] py-[1vh] rounded-2xl bg-transparent hover:bg-[#89b26f] hover:drop-shadow-2xl flex justify-center'
             onClick={() => setIsMe(true)}

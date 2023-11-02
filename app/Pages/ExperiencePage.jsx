@@ -4,7 +4,7 @@ const ExperiencePage = () => {
   return (
       <div className='experiencePage bg-[#171717] min-h-screen w-[100vw] md:min-w-[100vw] p-[8vw]  '>
         <div className='experience h-[70vh] bg-[#565656]'>
-              <div className=''>
+              <div className='hover:scale-105 hover:translate-x-10 duration-500'>
                   <div className="w-[60vw] text-[7vw] font-extrabold text-[#C5C4C5] pl-[7vw] pt-[2vh]">
                       Experience
                   </div>

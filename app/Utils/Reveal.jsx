@@ -3,7 +3,16 @@ import React, { useEffect, useRef } from 'react';
 import { motion, useInView, useAnimation } from 'framer-motion';
 
 
-const Reveal = ({ children }) => {
+const Reveal = ({ children , axis}) => {
+    const xVariants = {
+        hidden: { x: -100, opacity: 0 },
+        visible: { x: 0, opacity: 1 },
+      };
+    
+    const yVariants = {
+    hidden: { y: 50, opacity: 0 },
+    visible: { y: 0, opacity: 1 },
+    };
     const ref = useRef()
     const inView = useInView(ref,{once:false});
     const anim = useAnimation()
